@@ -1,8 +1,7 @@
 /* UNIVERSAL STYLES */
 
 body {
-    background-color: black;
-    text-align: center;
+    background-color: gray;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -18,18 +17,20 @@ h1 {
     text-align: center;
     font-size: 50px;
     font-weight: bold;
-    color: black;
+    color: white;
+    padding-top: 20px;
 }
 h2 {
  font-size: 30px;
  text-align: center;
  color: white;
- padding-top: 100px;
+ padding-top: 5px;
+ font-weight: lighter;
 }
 h3,
 h4,
 .flex-container {
-    display: flex;#
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -38,16 +39,16 @@ h4,
 header {
     width: 100%;
     position: fixed;
-    z-index: 0;
-    height: 75px;
+    z-index: auto;
+    height: 100px;
     background-color: black;
     border-bottom: 1px solid snow;
     align-items: center;
 }
 
 header img {
-    height: 50px;
-    padding-left: 10px;
+    height: 90px;
+    padding-left: 5px;
 }
 nav {
     text-align: right;
@@ -59,16 +60,96 @@ nav span {
     padding: 20px 10px;
 }
 
-/* MAIN SECTION */
-
-
+/*MAIN CONTENT*/
+.main {
+padding-top: 50px;
+margin: auto;
+width: max-content;
+}
 
 /* MISSION SECTION */
 
 #mission {
-height: 500px;
+height: 400px;
 background-image: url(../resources/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
-padding-top: 50px;
+padding-top: 85px;
 text-align: center;
-opacity: 0.33;
+width: 100%;
+font-weight: normal;
+}
+
+#mission .content {
+margin: auto;
+background-color: black;
+width: 100%;
+}
+
+/* SERVICES SECTION */
+#services {
+    height: 800px;
+    width: max-content;
+    margin: auto;
+    padding-top: 80px;
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.item {
+    padding: 5px;
+}
+.item img {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    display: block;
+}
+
+.item span {
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* THE TEAM */
+#team {
+    height: 800px;
+   width: max-content;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    }
+.member {
+    padding: 5px;
+}
+.member img {
+width: 400px;
+height: 500px;
+margin: 10px;
+display: block;
+}
+
+.member span {
+display: block;
+padding: 5px;
+font-weight: bold;
+text-align: center;
+font-size: 16px;
+color: whitesmoke;
+
+}
+/* FOOTER */
+#contact {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+footer {
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+    font-size: 14px;
 }
