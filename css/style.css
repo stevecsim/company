@@ -1,3 +1,5 @@
+/* UNIVERSAL STYLES */
+
 body {
     background-color: black;
     text-align: center;
@@ -5,36 +7,47 @@ body {
 }
 
 a {
-    color: steelblue;
+    color: snow;
+    font-size: 14px;
+    padding-right: 20px;
+    font-style: normal;
+    text-decoration: none;
 }
 
-h1,
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
 h2 {
- font-weight: 200;   
- font-size: 40px;
+ font-size: 30px;
  text-align: center;
  color: white;
+ padding-top: 100px;
 }
 h3,
-h4 {
-    margin: 0;
-    padding: 10px;
-}
-
+h4,
 .flex-container {
     display: flex;#
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* HEADER SECTION */
 header {
     width: 100%;
     position: fixed;
     z-index: 0;
-    height: 50px;
+    height: 75px;
     background-color: black;
     border-bottom: 1px solid snow;
     align-items: center;
+}
+
+header img {
+    height: 50px;
+    padding-left: 10px;
 }
 nav {
     text-align: right;
@@ -44,4 +57,18 @@ nav {
 nav span {
     display: inline-block;
     padding: 20px 10px;
+}
+
+/* MAIN SECTION */
+
+
+
+/* MISSION SECTION */
+
+#mission {
+height: 500px;
+background-image: url(../resources/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
+padding-top: 50px;
+text-align: center;
+opacity: 0.33;
 }
