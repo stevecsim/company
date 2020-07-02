@@ -1,169 +1,179 @@
 /* UNIVERSAL STYLES */
-
 body {
-    background-color: gray;
-    font-family: 'Courier New', Courier, monospace;
+background-color: black;
+font-family: 'Courier New', Courier, monospace;
+font-size: 16px;
 }
 
 a {
-    font-size: 18px;
-    padding-right: 5px;
+    font-size: .9rem;
+    padding-right: .3em;
     color: white;
     text-decoration: none;
     font-weight: bold;
     }
-
 a:link{
- color: white;
- text-decoration: none;
+    color: gray;
+    text-decoration: none;
 }
-a:visited,
-a:focus,
 a:hover{
-    color: whitesmoke;
+    color: blue;
 }
-a:active {
-    color: black;
-    background: whitesmoke;
+a:active{
+color: black;
+background: whitesmoke;
 }
-
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     padding-top: 20px;
 }
 h2 {
- font-size: 30px;
- text-align: center;
- color: white;
- padding-top: 5px;
- font-weight: lighter;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: white;
+    padding-top: 5px;
 }
-h3,
-h4,
+p {
+    color: white;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-/* HEADER SECTION */
-header {
     width: 100%;
-    position: fixed;
-    z-index: auto;
-    height: 100px;
-    background-color: black;
-    border-bottom: 1px solid snow;
-    align-items: center;
 }
 
-header img {
-    height: 90px;
-    padding-left: 5px;
+/*HEADER */
+header {
+width: 100%;
+position: fixed;
+z-index: auto;
+height: 100px;
+background-color: black;
+border-bottom: 1px solid whitesmoke;
+align-items: center;
+}
+
+header img{
+    height: 60px;
+    padding-left: 10px;
+
 }
 nav {
     text-align: right;
     flex-grow: 1;
+  
 }
-
 nav span {
     display: inline-block;
-    padding: 20px 10px;
-}
+    padding: 10px 25px;
+     }
 
-/*MAIN CONTENT*/
-.main {
-padding-top: 50px;
-margin: auto;
-width: max-content;
-}
+    /*MISSION*/
 
-/* MISSION SECTION */
+    .main {
+        display: flex;
+        padding-top: 50px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        }
 
-#mission {
-height: 400px;
-background-image: url(../resources/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
-padding-top: 85px;
-text-align: center;
-width: 100%;
-font-weight: normal;
-}
+    #statement {
+        display: flex;
+        height: 400px;
+        background-image: url(../resources/ben-kolde-bs2Ba7t69mM-unsplash.jpg);
+        padding-top: 80px;
+        text-align: center;
+        width: max-content;
+        font-weight: normal;
+    }
 
-#mission .content {
-margin: auto;
-background-color: black;
-width: 100%;
-}
+    #statement .mission {
+        margin: auto;
+        background-color: black;
+        width: 100%;
+            }
 
-/* SERVICES SECTION */
-#services {
-    height: 800px;
-    width: max-content;
-    margin: auto;
-    padding-top: 80px;
-    color: white;
-    padding-bottom: 20px;
+    /*SERVICES SECTION */
+ .main-services {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
     text-align: center;
-}
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    }
 .item {
     padding: 5px;
 }
 .item img {
+    display: flex;
     width: 400px;
     height: 500px;
-    margin: 10px;
+    margin: 5px;
+    flex-direction: column;
     display: block;
 }
+    .item span {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    }
 
-.item span {
+/*TEAM SECTION*/
+
+#team {
+    display: flex;
+    height: 800px;
+    width: max-content;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    flex-wrap: wrap;
+    
+} 
+ .member {
+    padding: 5px;
+} 
+
+ .member img {
+    display: flex;
+    width: 400px;
+    height: 500px;
+    margin: 5px;
+ 
+    display: block;
+} 
+ .member span {
     display: block;
     padding: 5px;
     font-weight: bold;
     text-align: center;
-    font-size: 16px;
-}
+    font-size: .8rem;
+    color: white;
+    } 
 
-/* THE TEAM */
-#team {
-    height: 800px;
-   width: max-content;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 20px;
-    text-align: center;
-    }
-.member {
-    padding: 5px;
-}
-.member img {
-width: 400px;
-height: 500px;
-margin: 10px;
-display: block;
-}
-
-.member span {
-display: block;
-padding: 5px;
-font-weight: bold;
-text-align: center;
-font-size: 16px;
-color: whitesmoke;
-
-}
-/* FOOTER */
+    /* CONTACT SECTION */
 #contact {
-    color: white;
-    font-size: 14px;
+    font-size: .8rem;
     text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-footer {
-    text-align: right;
-    padding-right: 20px;
-    color: white;
-    font-size: 14px;
-}
+    /* FOOTER SECTION */
+
+    footer {
+        text-align: right;
+        padding-right: 1.2em;
+        color: whitesmoke;
+        font-size: .6rem;
+    }
